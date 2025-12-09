@@ -358,6 +358,7 @@ bundle_config:
   mlflow_run_name: "run_fold_0"                               # MLflow run name
 continue_training: true                                     # Flag to continue training from a checkpoint [OPTIONAL]
 run_validation_only: false                                 # Flag to run only the validation step at the end of training [OPTIONAL]
+nnunet_config: 3d_fullres                                 # nnUNet configuration to use for training
 ```
 To run the Data Preparation and Preprocessing step, we create the corresponding Configuration file for our task:
 
