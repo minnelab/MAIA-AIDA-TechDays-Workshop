@@ -101,7 +101,7 @@ platforms:
             storageClassName: local-path
             volumeName: shm
           pvcMount:
-          - constant: shared
+          - constant: cifs-pvc
             mountPath: /mnt/Data
             pvcNameParameter:
               runtimeValue:
