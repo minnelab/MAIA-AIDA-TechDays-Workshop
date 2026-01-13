@@ -100,9 +100,6 @@ platforms:
             size: 2Gi
             storageClassName: local-path
             volumeName: shm
-          nodeSelector:
-            labels:
-              kubernetes.io/hostname: maia-small-5
           pvcMount:
           - constant: shared
             mountPath: /mnt/Data
