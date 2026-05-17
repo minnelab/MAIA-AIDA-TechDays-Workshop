@@ -47,3 +47,10 @@ To set your username and email for Git commits, use the following commands:
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 ```
+
+# Re-Sign Unverified Commits
+
+```
+git rebase --exec 'git commit --amend --no-edit --reset-author -S' -i master
+git push --force-with-lease
+```
